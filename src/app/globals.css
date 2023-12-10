@@ -1,6 +1,11 @@
 body {
   --accent: #fbc82a;
   background-color: #f5f2ee;
+  color: #171717;
+}
+
+.bg-dark {
+  background-color: #171717;
 }
 
 .MuiButton-containedPrimary {
