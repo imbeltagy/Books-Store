@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { CssBaseline } from "@mui/material";
+import { Box, CssBaseline, Stack } from "@mui/material";
 import Header from "@/components/header/index";
 import Footer from "@/components/footer";
 
@@ -16,9 +16,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <CssBaseline />
-        <Header />
-        {children}
-        <Footer />
+        <Stack minHeight="100svh">
+          <Header />
+          <Box flexGrow={1} display="grid" justifyContent="center" alignItems="center">
+            {children}
+          </Box>
+          <Footer />
+        </Stack>
       </body>
     </html>
   );
