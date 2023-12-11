@@ -16,13 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <CssBaseline />
-        <Stack minHeight="100svh">
-          <Header />
-          <Box flexGrow={1} display="grid" justifyContent="center" alignItems="center">
-            {children}
-          </Box>
-          <Footer />
-        </Stack>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );
