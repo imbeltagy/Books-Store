@@ -7,7 +7,7 @@ const mdDown = "@media (max-width: 899px)";
 
 const BestSelling = () => {
   return (
-    <section className="bg-dark">
+    <section className="bg-dark" style={{ marginBlock: "8rem" }}>
       <Container>
         <Grid container rowSpacing="3rem" columnSpacing="5rem" mt={0} pt="4rem" pb="7rem" justifyContent="center">
           {/* Image */}

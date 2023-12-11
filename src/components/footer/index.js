@@ -3,14 +3,9 @@
 import Nav from "@/components/header/nav";
 import { Container, List, Stack } from "@mui/material";
 
-const mdUp = "@media (min-width: 900px)";
-
 const Footer = () => {
   return (
-    <section
-      className="bg-light"
-      style={{ marginTop: "6rem", borderTop: ".2rem solid var(--black)", paddingBlock: "2rem" }}
-    >
+    <section className="bg-light" style={{ borderTop: ".2rem solid var(--black)", paddingBlock: "2rem" }}>
       <Container>
         <List>
           <Stack

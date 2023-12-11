@@ -1,8 +1,7 @@
-import BestSelling from "./components/best-selling";
-import FeaturedBooks from "./components/featured-books";
-import Features from "./components/features";
-import Footer from "./components/footer";
-import Hero from "./components/hero";
+import BestSelling from "./pageSections/bestSelling";
+import FeaturedBooks from "./pageSections/featuredBooks";
+import Features from "./pageSections/featuresSection";
+import Hero from "./pageSections/heroSection";
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <Features />
       <FeaturedBooks />
       <BestSelling />
-      <Footer />
     </>
   );
 }
