@@ -49,7 +49,7 @@ const Book = ({ title, subtitle, cover, price }) => {
 
 const FeaturedBooks = () => {
   return (
-    <section style={{ position: "relative" }}>
+    <section style={{ position: "relative", paddingBottom: "6rem" }}>
       {/* Black Background */}
       <Box className="bg-dark" height="12.5rem" width="100%" position="absolute"></Box>
 
