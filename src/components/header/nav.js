@@ -43,11 +43,11 @@ const navLinkStyle = {
   },
 };
 
-const Nav = () => {
+const Nav = ({ customListItemStyles }) => {
   const pathname = usePathname();
 
   return navItems.map(({ text, href }) => (
-    <ListItem key={text}>
+    <ListItem key={text} sx={customListItemStyles}>
       <MuiLink className={pathname == href ? "active" : ""} sx={navLinkStyle} component={RouterLink} href={href}>
         <span>{text}</span>
       </MuiLink>

@@ -2,7 +2,6 @@ body {
   --accent: #fbc82a;
   --black: #171717;
   color: var(--black);
-  min-height: 10000px;
 }
 
 .bg-dark {
