@@ -17,7 +17,7 @@ const mdDown = "@media (max-width: 899px)";
 
 const Hero = () => {
   return (
-    <Box paddingBlock="3rem" component="main">
+    <Box className="bg-light" paddingBlock="3rem" component="main">
       <Container>
         <Grid container alignItems="center" spacing="1rem">
           {/* Text */}
@@ -62,7 +62,16 @@ const Hero = () => {
                 </Button>
 
                 <AvatarGroup
-                  sx={{ "& .MuiAvatar-root": { borderColor: "black", width: "2.2rem", height: "2.2rem" } }}
+                  sx={{
+                    "& .MuiAvatar-root": {
+                      borderColor: "var(--black)",
+                      width: "2.2rem",
+                      height: "2.2rem",
+                      bgcolor: "var(--accent)",
+                      color: "var(--black)",
+                      fontSize: "1.2rem",
+                    },
+                  }}
                   max={5}
                 >
                   {avatars.map((avatar) => (

@@ -1,13 +1,15 @@
 body {
   --accent: #fbc82a;
   --black: #171717;
-  background-color: #f5f2ee;
   color: var(--black);
   min-height: 10000px;
 }
 
 .bg-dark {
   background-color: var(--black);
+}
+.bg-light {
+  background-color: #f5f2ee;
 }
 
 .MuiButton-containedPrimary {

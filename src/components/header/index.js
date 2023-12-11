@@ -27,7 +27,7 @@ const Header = () => {
   const toggleOpen = () => setIsOpen((prev) => !prev);
 
   return (
-    <Box sx={{ borderBottom: ".2rem solid" }}>
+    <Box className="bg-light" sx={{ borderBottom: ".2rem solid" }}>
       <Container>
         <Toolbar
           sx={{
