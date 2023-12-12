@@ -7,7 +7,7 @@ const navItems = [
   { text: "Categories", href: "/categories" },
   { text: "About us", href: "/about" },
   { text: "Contact", href: "/contact" },
-  { text: "FQA", href: "/fqa" },
+  { text: "FAQs", href: "/faqs" },
 ];
 
 const navLinkStyle = {
