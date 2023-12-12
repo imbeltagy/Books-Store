@@ -46,6 +46,7 @@ const SingleFeature = ({ icon, headding, content }) => {
     >
       <Box
         bgcolor="#fff"
+        color="var(--black)"
         borderRadius="10rem"
         marginInline="auto"
         width="3.5rem"
@@ -55,10 +56,10 @@ const SingleFeature = ({ icon, headding, content }) => {
       >
         {icon}
       </Box>
-      <Typography color="#fff" fontSize="1.1rem" letterSpacing=".05em" mt="1rem" mb=".4rem" fontWeight="700">
+      <Typography fontSize="1.1rem" letterSpacing=".05em" mt="1rem" mb=".4rem" fontWeight="700">
         {headding}
       </Typography>
-      <Typography color="#fff">{content}</Typography>
+      <Typography>{content}</Typography>
     </Box>
   );
 };

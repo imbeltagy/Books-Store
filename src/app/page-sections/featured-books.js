@@ -33,7 +33,7 @@ const Book = ({ title, subtitle, cover, price }) => {
     <Card sx={{ border: ".2rem solid #000", borderRadius: 0, boxShadow: ".2rem .2rem #000" }}>
       <CardMedia component="img" image={cover} alt={title} sx={{ aspectRatio: "310 / 500" }} />
       <Box position="relative" className="bg-dark" width="5.5rem" height="3rem" mt="-3rem" ml="auto">
-        <Typography variant="h6" color="#fff" lineHeight="3rem" textAlign="center">
+        <Typography variant="h6" lineHeight="3rem" textAlign="center">
           {price}
         </Typography>
       </Box>

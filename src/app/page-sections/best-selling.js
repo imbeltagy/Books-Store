@@ -24,7 +24,6 @@ const BestSelling = () => {
           {/* Text */}
           <Grid item sx={12} md={7} lg={6}>
             <Stack
-              color="#fff"
               spacing="1.2rem"
               alignItems="flex-start"
               sx={{
