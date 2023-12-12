@@ -13,7 +13,7 @@ const BestSelling = () => {
           {/* Image */}
           <Grid item sx={12} md={5} lg={4}>
             <Image
-              src="/best-selling.jpg"
+              src="/home/best-selling.jpg"
               alt="Book Cover"
               width="310"
               height="500"

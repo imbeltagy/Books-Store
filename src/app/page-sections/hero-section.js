@@ -10,7 +10,7 @@ const avatars = [
   "",
 ];
 
-const heroImg = "/hero.svg";
+const heroImg = "/home/hero.svg";
 
 const mdUp = "@media (min-width: 900px)";
 const mdDown = "@media (max-width: 899px)";

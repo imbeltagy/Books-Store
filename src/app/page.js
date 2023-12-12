@@ -1,7 +1,7 @@
-import BestSelling from "./pageSections/bestSelling";
-import FeaturedBooks from "./pageSections/featuredBooks";
-import Features from "./pageSections/featuresSection";
-import Hero from "./pageSections/heroSection";
+import BestSelling from "./page-sections/best-selling";
+import FeaturedBooks from "./page-sections/featured-books";
+import Features from "./page-sections/features-section";
+import Hero from "./page-sections/hero-section";
 
 export default function Home() {
   return (
