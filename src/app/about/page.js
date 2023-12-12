@@ -6,7 +6,7 @@ const mdDown = "@media (max-width: 899px)";
 const About = () => {
   return (
     <main className="bg-dark" style={{ flexGrow: 1, display: "flex", alignItems: "center" }}>
-      <Container sx={{ color: "#fff" }}>
+      <Container>
         <Grid container alignItems="center" columnSpacing="2rem" rowSpacing="5rem" pb="5rem" mt="0">
           {/* Text */}
           <Grid item xs={12} md={6} sx={{ [mdDown]: { order: 1 } }}>
