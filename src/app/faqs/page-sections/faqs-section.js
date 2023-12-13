@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowForwardIosSharp } from "@mui/icons-material";
-import { Accordion, AccordionDetails, AccordionSummary, Box, Container, Grid, Stack, Typography } from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import { useState } from "react";
 
 const questions = [
