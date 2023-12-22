@@ -73,7 +73,13 @@ const BestSelling = () => {
               </Box>
 
               {/* C2A Button */}
-              <Button variant="contained" sx={{ paddingInline: "2.5rem" }}>
+              <Button
+                variant="contained"
+                sx={{ paddingInline: "2.5rem" }}
+                component="a"
+                href="https://openlibrary.org/works/OL17078706W"
+                target="_blank"
+              >
                 Buy Now
               </Button>
             </Stack>
