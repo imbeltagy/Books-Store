@@ -16,7 +16,7 @@ const mdDown = "@media (max-width: 899px)";
 
 const CustomFormControl = ({ label, id, required, endIcon }) => (
   <Box width="100%">
-    <FormLabel sx={{ color: "var(--black)", mb: ".3rem", display: "block" }} for={id} {...{ required }}>
+    <FormLabel sx={{ color: "var(--black)", mb: ".3rem", display: "block" }} htmlFor={id} {...{ required }}>
       {label}
     </FormLabel>
     <InputBase
