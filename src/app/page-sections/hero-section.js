@@ -93,6 +93,7 @@ const Hero = () => {
               }}
             >
               <Image
+                priority="1"
                 src={heroImg}
                 alt="display image: a man reading a book"
                 style={{
