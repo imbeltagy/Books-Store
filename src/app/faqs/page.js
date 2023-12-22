@@ -2,6 +2,11 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import FAQs from "./page-sections/faqs-section.js";
 import Image from "next/image.js";
 
+export const metadata = {
+  title: "Bookshop - FAQs",
+  description: "FAQs Page description",
+};
+
 const DisplayImage = () => (
   <Box
     sx={{

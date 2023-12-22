@@ -1,6 +1,11 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
+export const metadata = {
+  title: "Bookshop - About",
+  description: "About Page description",
+};
+
 const mdDown = "@media (max-width: 899px)";
 
 const About = () => {

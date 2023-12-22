@@ -12,6 +12,11 @@ import {
   Typography,
 } from "@mui/material";
 
+export const metadata = {
+  title: "Bookshop - Contact",
+  description: "Contact Page description",
+};
+
 const mdDown = "@media (max-width: 899px)";
 
 const CustomFormControl = ({ label, id, required, endIcon }) => (
