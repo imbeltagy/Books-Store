@@ -1,5 +1,4 @@
 import { Box, ButtonBase, Card, CardHeader, CardMedia, Typography } from "@mui/material";
-import Link from "next/link";
 
 const BookCard = ({ title, subtitle, thumbnail, price, previewLink, fullHeight }) => {
   return (
@@ -16,7 +15,7 @@ const BookCard = ({ title, subtitle, thumbnail, price, previewLink, fullHeight }
         height: fullHeight && "100%",
         width: "100%",
       }}
-      component={Link}
+      component="a"
       href={previewLink}
       target="_blank"
     >
