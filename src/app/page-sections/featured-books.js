@@ -1,5 +1,6 @@
-import BookCard from "@/components/book-card";
+// import BookCard from "@/components/book-card";
 import { Box, Container, Grid } from "@mui/material";
+import dynamic from "next/dynamic";
 import { Fragment } from "react";
 
 const books = [
@@ -36,6 +37,10 @@ const books = [
     previewLink: `https://openlibrary.org`,
   },
 ];
+
+const BookCard = dynamic(() => import("@/components/book-card"), {
+  ssr: false, // Disable server-side rendering for this component
+});
 
 const FeaturedBooks = () => {
   return (

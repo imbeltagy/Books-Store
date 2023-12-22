@@ -1,3 +1,4 @@
+"use client";
 import { Box, ButtonBase, Card, CardHeader, CardMedia, Typography } from "@mui/material";
 
 const BookCard = ({ title, subtitle, thumbnail, smallThumbnail, price, previewLink, fullHeight }) => {
@@ -44,7 +45,10 @@ const BookCard = ({ title, subtitle, thumbnail, smallThumbnail, price, previewLi
             loading="lazy"
             image={thumbnail}
             alt={title}
-            sx={{ aspectRatio: "310 / 500", position: "absolute", top: 0, bgcolor: "#0000" }}
+            sx={{ aspectRatio: "310 / 500", position: "absolute", top: 0, opacity: 0, transition: "opacity .5s" }}
+            onLoad={(e) => {
+              e.target.style.opacity = 1;
+            }}
           />
         </Box>
 
