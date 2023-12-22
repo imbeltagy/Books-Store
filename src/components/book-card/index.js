@@ -1,6 +1,6 @@
 import { Box, ButtonBase, Card, CardHeader, CardMedia, Typography } from "@mui/material";
 
-const BookCard = ({ title, subtitle, thumbnail, price, previewLink, fullHeight }) => {
+const BookCard = ({ title, subtitle, thumbnail, smallThumbnail, price, previewLink, fullHeight }) => {
   return (
     <ButtonBase
       sx={{
@@ -30,12 +30,32 @@ const BookCard = ({ title, subtitle, thumbnail, price, previewLink, fullHeight }
         }}
         elevation={0}
       >
-        <CardMedia component="img" image={thumbnail} alt={title} sx={{ aspectRatio: "310 / 500" }} />
+        {/* Thumbnail */}
+        <Box width="100%" opacity="0" position="relative">
+          <CardMedia
+            component="img"
+            loading="lazy"
+            image={smallThumbnail}
+            alt={title}
+            sx={{ aspectRatio: "310 / 500" }}
+          />
+          <CardMedia
+            component="img"
+            loading="lazy"
+            image={thumbnail}
+            alt={title}
+            sx={{ aspectRatio: "310 / 500", position: "absolute", top: 0, bgcolor: "#0000" }}
+          />
+        </Box>
+
+        {/* Price */}
         <Box position="relative" className="bg-dark" width="5.5rem" height="3rem" mt="-3rem" ml="auto">
           <Typography variant="h6" lineHeight="3rem" textAlign="center">
             {price}
           </Typography>
         </Box>
+
+        {/* Title & SubTitle */}
         <CardHeader
           title={title}
           titleTypographyProps={{ variant: "h6", fontWeight: "900", component: "span" }}
