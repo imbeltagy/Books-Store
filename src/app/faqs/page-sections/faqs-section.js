@@ -74,7 +74,7 @@ const FAQs = () => {
 
   return questions.map(({ summary, content }, i) => {
     const id = `q${i + 1}`;
-    return <CustomAccordion {...{ summary, content, id, expanded, handleChange }} />;
+    return <CustomAccordion {...{ summary, content, id, expanded, handleChange }} key={id} />;
   });
 };
 
