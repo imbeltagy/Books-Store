@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Box, Button, Container, Grid, Stack, Typography, useTheme } from "@mui/material";
+import { Avatar, AvatarGroup, Box, Button, Container, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 
 const avatars = [
@@ -19,9 +19,9 @@ const Hero = () => {
   return (
     <Box className="bg-light" paddingBlock="3rem" component="main">
       <Container>
-        <Grid container alignItems="center" spacing="1rem">
+        <Stack sx={{ [mdUp]: { flexDirection: "row" } }} flexWrap="nowrap" alignItems="center" spacing="1rem">
           {/* Text */}
-          <Grid item xs={12} md={6} sx={{ [mdDown]: { order: 1 } }}>
+          <Box width="100%" sx={{ [mdDown]: { order: 1 } }}>
             <Box
               sx={{
                 [mdDown]: {
@@ -80,10 +80,10 @@ const Hero = () => {
                 </AvatarGroup>
               </Stack>
             </Box>
-          </Grid>
+          </Box>
 
           {/* Image */}
-          <Grid item xs={12} md={6}>
+          <Box width="100%" sx={{ [mdDown]: { order: 1 } }}>
             <Box
               sx={{
                 [mdDown]: {
@@ -103,8 +103,8 @@ const Hero = () => {
                 height={500}
               />
             </Box>
-          </Grid>
-        </Grid>
+          </Box>
+        </Stack>
       </Container>
     </Box>
   );

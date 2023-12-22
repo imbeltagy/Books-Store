@@ -11,7 +11,7 @@ const BestSelling = () => {
       <Container>
         <Grid container rowSpacing="3rem" columnSpacing="5rem" mt={0} pt="4rem" pb="7rem" justifyContent="center">
           {/* Image */}
-          <Grid item sx={12} md={5} lg={4}>
+          <Grid item xs={12} md={5} lg={4}>
             <Image
               src="/home/best-selling.jpg"
               alt="Book Cover"
@@ -22,7 +22,7 @@ const BestSelling = () => {
           </Grid>
 
           {/* Text */}
-          <Grid item sx={12} md={7} lg={6}>
+          <Grid item xs={12} md={7} lg={6}>
             <Stack
               spacing="1.2rem"
               alignItems="flex-start"
